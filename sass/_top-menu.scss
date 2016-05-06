@@ -1,0 +1,77 @@
+/* -- top-menu ----*/
+#top-menu-container {
+    //position: fixed;
+    //width: 100%;
+    //height:520px;
+
+    nav.navbar {
+
+        button.navbar-toggle {
+            position: fixed;
+            top: 50px;
+            left: 50px;
+            background: none;
+            border: none;
+            @media (min-width: $screen-sm) {
+                display: none;
+            }
+
+            .icon-bar {
+                display: block;
+                height: 2px;
+                width: 32px;
+                background-color: white;
+                margin-bottom: 6px;
+            }
+        }//button
+
+
+
+        ul.nav {
+
+            list-style: none;
+            position: fixed;
+            width: 100%;
+            top:0;
+            left:-100%;
+            background-color: #00b3ee;
+
+            li {
+
+                @media (min-width:$screen-sm) {
+
+                    float: left;
+                }
+
+
+                a {
+
+
+
+                }
+
+            }
+
+
+
+        }//ul
+
+
+        .logo-holder {
+
+            position: absolute;
+            top:55px;
+            right:50px;
+
+            a {
+
+
+            }
+
+        }//logo
+
+
+    }//nav
+
+
+}//top-menu-container
