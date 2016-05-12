@@ -6,6 +6,28 @@ header {
 	.mask {
 		height: 100%;
 		background: url("/images/header_mask_bg.png");
+		
+		
+		div {
+			
+			background: url("/images/triangle_header.svg") 75% center no-repeat;
+			background-size:cover;
+			opacity: 1;
+			height: 100%;
+
+
+			h2 {
+				text-transform: capitalize;
+				margin-top: 50%;
+				color: white;
+			}
+
+			h3 {
+				color: white;
+			}
+
+
+		}
 	}
 	
 }

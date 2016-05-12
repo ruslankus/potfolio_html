@@ -1309,6 +1309,45 @@ pre {
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+.hidden {
+  display: none !important; }
+
+.affix {
+  position: fixed; }
+
 /* -- top-menu ----*/
 #top-menu-container nav.navbar button.navbar-toggle {
   position: fixed;
@@ -1370,6 +1409,17 @@ header {
   header .mask {
     height: 100%;
     background: url("/images/header_mask_bg.png"); }
+    header .mask div {
+      background: url("/images/triangle_header.svg") 75% center no-repeat;
+      background-size: cover;
+      opacity: 1;
+      height: 100%; }
+      header .mask div h2 {
+        text-transform: capitalize;
+        margin-top: 50%;
+        color: white; }
+      header .mask div h3 {
+        color: white; }
 
 body {
   position: relative; }

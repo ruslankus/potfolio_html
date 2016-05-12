@@ -1,8 +1,6 @@
 $(function(){
    
-    var screenHeight = $(window).height();
-    console.log(screenHeight);
-    $('header, #top-menu').css('height',screenHeight);
+    setSize();
 
     $('#id-button').click(function () {
         
@@ -16,8 +14,6 @@ $(function(){
                 button.removeClass('cross');
             });
 
-
-            
         }else{
 
             $('#top-menu').animate({
@@ -26,9 +22,25 @@ $(function(){
                 button.addClass('cross');
             });
 
-
         }
     })
+
+    $(window).resize(function () {
+        setSize();
+    });
+
+
+    function setSize(){
+
+        var screenHeight = $(window).height();
+        var screenWidth = $(window).width();
+
+        var koef = (screenWidth > 440)? 0.4 : 0.5;
+        console.log(screenHeight, koef);
+        $('header, #top-menu').css('height',screenHeight);
+
+        $(".mask > div > h2").css("margin-top",screenHeight * koef);
+    }
     
     
 });
