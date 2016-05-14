@@ -8,10 +8,12 @@
 
         button.navbar-toggle {
             position: fixed;
-            top: 50px;
-            left: 50px;
+            top: 40px;
+            left: 20px;
             background: none;
             border: none;
+            z-index: 10;
+            height: 40px;
             @media (min-width: $screen-sm) {
                 display: none;
             }
@@ -23,12 +25,34 @@
                 background-color: white;
                 margin-bottom: 6px;
             }
+
+            &.cross {
+
+                .icon-bar {
+                    display: none;
+                    margin-bottom: 0;
+                    &:first-child {
+                        display: block;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+
+                    &:last-child {
+                        display: block;
+                        transform: rotate(135deg);
+                        -webkit-transform: rotate(135deg);
+                        position: relative;
+                        bottom: 2px;
+                    }
+                }
+
+            }
         }//button
 
 
 
         ul.nav {
-
+            z-index:3;
             list-style: none;
             position: fixed;
             width: 100%;
@@ -60,12 +84,17 @@
         .logo-holder {
 
             position: absolute;
-            top:55px;
-            right:50px;
-
+            top:40px;
+            right:20px;
+            width: 160px;
             a {
+                display: block;
+                width: 100%;
 
-
+                img {
+                    display: block;
+                    width: 100%;
+                }
             }
 
         }//logo

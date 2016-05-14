@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 	<title>My portfolio</title>
 </head>
@@ -11,14 +12,14 @@
     <nav class="navbar">
        
           
-            <button type="button" class="navbar-toggle"  >
+            <button id="id-button" type="button" class="navbar-toggle"  >
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
            
           
-            <ul class="nav navbar-nav">
+            <ul id="top-menu" class="nav navbar-nav">
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">About me</a></li>
                 <li><a href="">Testimonials</a></li>
@@ -27,14 +28,23 @@
            
 
             <div class="logo-holder">
-                <a href="">logo</a>
+                <a href=""><img src="/images/logo.svg"></a>
             </div>
 
       
     </nav>
 </section>
 <header>
-    header
+    <div class="mask">
+        
+        <div class="clearfix">
+
+            <h2><span>Ruslan</span> <span>kiricenko</span></h2>
+            <h3>it solution expert</h3>
+            
+        </div>
+        
+    </div>
 </header>
 <section id="portfolio">
     portfolio
@@ -51,7 +61,8 @@
 <section id="contacts">
     contacts
 </section>
-    
+<script src="js/jquery-2.2.3.js" type="application/javascript"></script>
+<script src="js/scripts.js" type="application/javascript" ></script>
 </body>
 </html>
 
