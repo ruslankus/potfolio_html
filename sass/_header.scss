@@ -14,16 +14,23 @@ header {
 			background-size:cover;
 			opacity: 1;
 			height: 100%;
-
+			padding-left: 10px;
 
 			h2 {
 				text-transform: capitalize;
 				margin-top: 50%;
 				color: white;
+				@include firsextra_bold(40px);
+				text-align: left;
+
+				span {
+					display: block;
+				}
 			}
 
 			h3 {
 				color: white;
+				@include helvetika_light(20px);
 			}
 
 

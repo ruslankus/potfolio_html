@@ -35,11 +35,11 @@ $(function(){
         var screenHeight = $(window).height();
         var screenWidth = $(window).width();
 
-        var koef = (screenWidth > 440)? 0.4 : 0.5;
-        console.log(screenHeight, koef);
+        var koeff = (screenWidth > 440)? 0.4 : 0.5;
+        console.log(screenHeight, koeff);
         $('header, #top-menu').css('height',screenHeight);
 
-        $(".mask > div > h2").css("margin-top",screenHeight * koef);
+        $(".mask > div > h2").css("margin-top",screenHeight * koeff);
     }
     
     

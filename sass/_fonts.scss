@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'TT_Firs';
+	src: url('../fonts/tt_firs_extrabold-webfont.woff2') format('woff2'),
+	url('../fonts/tt_firs_extrabold-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TT_Firs';
+	src: url('../fonts/TTFirs-Regular.eot');
+	src: url('../fonts/TTFirs-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/TTFirs-Regular.woff') format('woff'),
+	url('../fonts/TTFirs-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@mixin firsextra_bold($size){
+	font-family: TT_Firs;
+	font-weight: 700;
+	font-size: $size;
+}
+
+
+@mixin firsextra_regular($size){
+	font-family: TT_Firs;
+	font-weight: 400;
+	font-size: $size;
+}
+
+
+@font-face {
+	font-family: 'Helvetica_eText';
+	src: url('../fonts/HelveticaNeueeTextPro-Light.eot');
+	src: url('../fonts/HelveticaNeueeTextPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueeTextPro-Light.woff') format('woff'),
+	url('../fonts/HelveticaNeueeTextPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@mixin helvetika_light($size){
+	font-family: Helvetica_eText,sans-serif;
+	font-weight: 300;
+	font-size: $size;
+}

@@ -1,3 +1,5 @@
+@import '_fonts';
+
 @import '_bootstrap';
 
 @import '_top-menu';
@@ -6,7 +8,10 @@
 
 @import '_footer';
 
-
+* {
+	margin:0;
+	padding: 0;
+}
 
 body {
 	position: relative;
