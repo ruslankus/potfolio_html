@@ -18,16 +18,33 @@
 }
 
 
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../fonts/TTFirs-Light.eot');
+	src: url('../fonts/TTFirs-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/TTFirs-Light.woff') format('woff'),
+	url('../fonts/TTFirs-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
 @mixin firsextra_bold($size){
-	font-family: TT_Firs;
+	font-family: TT_Firs, sans-serif;
 	font-weight: 700;
 	font-size: $size;
 }
 
 
 @mixin firsextra_regular($size){
-	font-family: TT_Firs;
+	font-family: TT_Firs, sans-serif;
 	font-weight: 400;
+	font-size: $size;
+}
+
+@mixin firsextra_light($size){
+	font-family: TT_Firs, sans-serif;
+	font-weight: 300;
 	font-size: $size;
 }
 

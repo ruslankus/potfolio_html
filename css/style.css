@@ -10,6 +10,12 @@
   font-weight: 400;
   font-style: normal; }
 @font-face {
+  font-family: 'TT Firs';
+  src: url("../fonts/TTFirs-Light.eot");
+  src: url("../fonts/TTFirs-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TTFirs-Light.woff") format("woff"), url("../fonts/TTFirs-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
   font-family: 'Helvetica_eText';
   src: url("../fonts/HelveticaNeueeTextPro-Light.eot");
   src: url("../fonts/HelveticaNeueeTextPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueeTextPro-Light.woff") format("woff"), url("../fonts/HelveticaNeueeTextPro-Light.ttf") format("truetype");
@@ -1365,6 +1371,16 @@ pre {
 .affix {
   position: fixed; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative; }
+  body h1, body h2, body h3, body h4 {
+    margin-bottom: 0;
+    margin-top: 0; }
+
 /* -- top-menu ----*/
 #top-menu-container nav.navbar button.navbar-toggle {
   position: fixed;
@@ -1381,11 +1397,12 @@ pre {
     display: block;
     height: 2px;
     width: 32px;
-    background-color: white;
+    background-color: #868686;
     margin-bottom: 6px; }
   #top-menu-container nav.navbar button.navbar-toggle.cross .icon-bar {
     display: none;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    background-color: white; }
     #top-menu-container nav.navbar button.navbar-toggle.cross .icon-bar:first-child {
       display: block;
       transform: rotate(45deg);
@@ -1403,7 +1420,8 @@ pre {
   width: 100%;
   top: 0;
   left: -100%;
-  background-color: #868686;
+  background: #868686 url("/images/triangle_menu_header.svg") 62.5% center no-repeat;
+  background-size: cover;
   padding-top: 110px;
   padding-left: 10px; }
   @media (min-width: 768px) {
@@ -1412,7 +1430,7 @@ pre {
   #top-menu-container nav.navbar ul.nav li a {
     color: white;
     text-decoration: none;
-    font-family: TT_Firs;
+    font-family: TT_Firs, sans-serif;
     font-weight: 400;
     font-size: 28px; }
 #top-menu-container nav.navbar .logo-holder {
@@ -1445,7 +1463,7 @@ header {
         text-transform: capitalize;
         margin-top: 50%;
         color: white;
-        font-family: TT_Firs;
+        font-family: TT_Firs, sans-serif;
         font-weight: 700;
         font-size: 40px;
         text-align: left; }
@@ -1457,12 +1475,88 @@ header {
         font-weight: 300;
         font-size: 20px; }
 
-* {
-  margin: 0;
-  padding: 0; }
+#portfolio {
+  background: #f1f1f1 url(/images/triangle_white_porfolio.svg) 20% center no-repeat;
+  background-size: cover; }
+  #portfolio .container {
+    padding-top: 55px; }
+    #portfolio .container div h2 {
+      font-family: TT_Firs, sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: #2239ac;
+      text-align: center; }
+    #portfolio .container div h3 {
+      margin-top: 10px;
+      font-family: Helvetica_eText,sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #aeaeae;
+      text-align: center; }
+    #portfolio .container div .portfolio-holder {
+      margin-top: 40px; }
+      #portfolio .container div .portfolio-holder .project {
+        margin-bottom: 20px; }
+        @media (min-width: 480px) {
+          #portfolio .container div .portfolio-holder .project {
+            width: 50%;
+            float: left; }
+            #portfolio .container div .portfolio-holder .project:nth-child(odd) {
+              padding-right: 10px; }
+            #portfolio .container div .portfolio-holder .project:nth-child(even) {
+              padding-left: 10px; } }
+        #portfolio .container div .portfolio-holder .project a {
+          display: block;
+          width: 100%; }
+          #portfolio .container div .portfolio-holder .project a img {
+            border: 1px solid #e1e1e1;
+            display: block;
+            width: 100%; }
 
-body {
-  position: relative; }
-  body h1, body h2, body h3, body h4 {
-    margin-bottom: 0;
-    margin-top: 0; }
+#service {
+  background: url("/images/services-bg.jpg") no-repeat;
+  background-attachment: fixed; }
+  #service .top {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url("/images/header_mask_bg.png"); }
+    #service .top h3 {
+      font-family: TT_Firs, sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: white;
+      text-align: center; }
+    #service .top p {
+      font-family: Helvetica_eText,sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px; }
+  #service .bottom {
+    background-color: #f1f1f1;
+    padding-left: 10px;
+    padding-right: 10px; }
+    #service .bottom .wrap {
+      padding-top: 55px; }
+      #service .bottom .wrap h2 {
+        font-family: TT_Firs, sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #2239ac;
+        text-align: center; }
+      #service .bottom .wrap h3 {
+        margin-top: 10px;
+        font-family: Helvetica_eText,sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #aeaeae;
+        text-align: center; }
+      #service .bottom .wrap .service-holder {
+        margin-top: 30px;
+        text-align: center;
+        line-height: 100px; }
+        #service .bottom .wrap .service-holder span {
+          padding-right: 5px;
+          padding-left: 5px; }
