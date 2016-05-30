@@ -1,0 +1,61 @@
+footer {
+	padding-top: 35px;
+	padding-bottom: 15px;
+	background-color: #282828;
+
+	div {
+
+		&.social-holder {
+			text-align: center;
+
+			a {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				background-color: #515151;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 38px;
+				margin-left: 10px;
+
+
+				img {
+
+
+				}
+			}
+
+		}
+
+		&:last-child {
+			margin-top: 15px;
+
+			p {
+				color:#656565;
+				@include helvetika_light(13px);
+				text-align: center;
+
+				span {
+
+					display: block;
+					&:first-child {
+
+					}
+
+
+					&:last-child {
+						font-size: 11px;
+						a {
+							color: inherit;
+							text-decoration: underline;
+						}
+
+					}
+				}
+
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,137 @@
+#contacts {
+
+	background-color: #282828;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	.wrapper {
+
+		padding-top: 70px;
+		padding-bottom: 45px;
+		border-bottom: 1px solid #535353;
+
+
+		h2 {
+			@include firsextra_light(40px);
+			line-height: 40px;
+			color: white;
+			text-align: center;
+			text-transform: capitalize;
+		}
+
+		h3 {
+			margin-top: 0px;
+			@include helvetika_light(16px);
+			color: #4f4f4f;
+			text-align: center;
+		}
+
+		.top-info {
+			margin-top: 20px;
+			div {
+
+				&:first-child{
+
+
+				}
+
+
+				&:last-child {
+
+
+				}
+
+				p {
+					color:white;
+					@include helvetika_light(16px);
+
+					span {
+						display: inline-block;
+						width: 49%;
+
+						&:first-child {
+							text-align: left;
+						}
+
+						&:last-child {
+							text-align: right;
+						}
+					}
+
+				}
+			}
+
+		}//top-info
+
+		.form-holder {
+
+			form {
+
+				div {
+					margin-bottom: 15px;
+					& > * {
+						border-radius: 0;
+						border:none;
+					}
+
+					input {
+						background-color: #323232;
+						height: 46px;
+						width: 100%;
+						padding-left: 10px;
+						color: white;
+						&::-webkit-input-placeholder {color:#919191;}
+						&::-moz-placeholder          {color:#919191;}/* Firefox 19+ */
+						&:-moz-placeholder           {color:#919191;}/* Firefox 18- */
+						&:-ms-input-placeholder      {color:#919191;}
+
+					}
+
+					textarea {
+						background-color: #323232;
+						height: 145px;
+						width:  100%;
+						resize: none;
+						padding:8px 0 0 8px;
+						color: white;
+						&::-webkit-input-placeholder {color:#919191;}
+						&::-moz-placeholder          {color:#919191;}/* Firefox 19+ */
+						&:-moz-placeholder           {color:#919191;}/* Firefox 18- */
+						&:-ms-input-placeholder      {color:#919191;}
+					}
+
+
+					button  {
+						background-color: #2239ac;
+						height: 46px;
+						width: 100%;
+						@include helvetika_light(16px);
+						color: white;
+					}
+
+					&.form-name {
+
+					}
+
+					&.form-email {
+
+
+					}
+
+					&.form-text {
+
+
+					}
+
+					&.form-submit {
+
+
+					}
+
+
+				}
+			}
+		}
+	}
+
+}

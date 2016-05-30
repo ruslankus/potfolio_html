@@ -1637,3 +1637,118 @@ header {
       #client .mask .wrapper .pic-holder span {
         padding-left: 10px;
         padding-right: 10px; }
+
+#contacts {
+  background-color: #282828;
+  padding-right: 10px;
+  padding-left: 10px; }
+  #contacts .wrapper {
+    padding-top: 70px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #535353; }
+    #contacts .wrapper h2 {
+      font-family: TT_Firs, sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 40px;
+      color: white;
+      text-align: center;
+      text-transform: capitalize; }
+    #contacts .wrapper h3 {
+      margin-top: 0px;
+      font-family: Helvetica_eText,sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #4f4f4f;
+      text-align: center; }
+    #contacts .wrapper .top-info {
+      margin-top: 20px; }
+      #contacts .wrapper .top-info div p {
+        color: white;
+        font-family: Helvetica_eText,sans-serif;
+        font-weight: 300;
+        font-size: 16px; }
+        #contacts .wrapper .top-info div p span {
+          display: inline-block;
+          width: 49%; }
+          #contacts .wrapper .top-info div p span:first-child {
+            text-align: left; }
+          #contacts .wrapper .top-info div p span:last-child {
+            text-align: right; }
+    #contacts .wrapper .form-holder form div {
+      margin-bottom: 15px; }
+      #contacts .wrapper .form-holder form div > * {
+        border-radius: 0;
+        border: none; }
+      #contacts .wrapper .form-holder form div input {
+        background-color: #323232;
+        height: 46px;
+        width: 100%;
+        padding-left: 10px;
+        color: white;
+        /* Firefox 19+ */
+        /* Firefox 18- */ }
+        #contacts .wrapper .form-holder form div input::-webkit-input-placeholder {
+          color: #919191; }
+        #contacts .wrapper .form-holder form div input::-moz-placeholder {
+          color: #919191; }
+        #contacts .wrapper .form-holder form div input:-moz-placeholder {
+          color: #919191; }
+        #contacts .wrapper .form-holder form div input:-ms-input-placeholder {
+          color: #919191; }
+      #contacts .wrapper .form-holder form div textarea {
+        background-color: #323232;
+        height: 145px;
+        width: 100%;
+        resize: none;
+        padding: 8px 0 0 8px;
+        color: white;
+        /* Firefox 19+ */
+        /* Firefox 18- */ }
+        #contacts .wrapper .form-holder form div textarea::-webkit-input-placeholder {
+          color: #919191; }
+        #contacts .wrapper .form-holder form div textarea::-moz-placeholder {
+          color: #919191; }
+        #contacts .wrapper .form-holder form div textarea:-moz-placeholder {
+          color: #919191; }
+        #contacts .wrapper .form-holder form div textarea:-ms-input-placeholder {
+          color: #919191; }
+      #contacts .wrapper .form-holder form div button {
+        background-color: #2239ac;
+        height: 46px;
+        width: 100%;
+        font-family: Helvetica_eText,sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: white; }
+
+footer {
+  padding-top: 35px;
+  padding-bottom: 15px;
+  background-color: #282828; }
+  footer div.social-holder {
+    text-align: center; }
+    footer div.social-holder a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #515151;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 38px;
+      margin-left: 10px; }
+  footer div:last-child {
+    margin-top: 15px; }
+    footer div:last-child p {
+      color: #656565;
+      font-family: Helvetica_eText,sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      text-align: center; }
+      footer div:last-child p span {
+        display: block; }
+        footer div:last-child p span:last-child {
+          font-size: 11px; }
+          footer div:last-child p span:last-child a {
+            color: inherit;
+            text-decoration: underline; }
