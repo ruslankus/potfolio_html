@@ -1514,8 +1514,9 @@ header {
             width: 100%; }
 
 #service {
-  background: url("/images/services-bg.jpg") no-repeat;
-  background-attachment: fixed; }
+  background: url("/images/services-bg.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   #service .top {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -1560,3 +1561,79 @@ header {
         #service .bottom .wrap .service-holder span {
           padding-right: 5px;
           padding-left: 5px; }
+
+#aboutme .wrapper {
+  padding-top: 55px; }
+  #aboutme .wrapper h2 {
+    font-family: TT_Firs, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #2239ac;
+    text-align: center; }
+  #aboutme .wrapper h3 {
+    margin-top: 10px;
+    font-family: Helvetica_eText,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #aeaeae;
+    text-align: center; }
+  #aboutme .wrapper .descr {
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    #aboutme .wrapper .descr p {
+      margin-bottom: 30px;
+      font-family: Helvetica_eText,sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333333;
+      line-height: 23px; }
+    #aboutme .wrapper .descr div {
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%; }
+      #aboutme .wrapper .descr div img {
+        width: 100%;
+        border-radius: 50%; }
+  #aboutme .wrapper .sertificates {
+    margin-top: 30px; }
+    #aboutme .wrapper .sertificates h3 {
+      margin-bottom: 20px;
+      font-family: TT_Firs, sans-serif;
+      font-weight: 300;
+      font-size: 25px;
+      color: #aeaeae;
+      text-align: center; }
+    #aboutme .wrapper .sertificates .s-holder a {
+      display: inline-block;
+      width: 49%; }
+      #aboutme .wrapper .sertificates .s-holder a img {
+        width: 100%;
+        display: block; }
+
+#client {
+  background: url("/images/clients_backgraund.jpg") no-repeat center;
+  background-size: cover; }
+  #client .mask {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: url("/images/header_mask_bg.png"); }
+    #client .mask .wrapper h2 {
+      font-family: TT_Firs, sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: white;
+      text-align: center; }
+    #client .mask .wrapper h3 {
+      margin-top: 10px;
+      font-family: Helvetica_eText,sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #aeaeae;
+      text-align: center; }
+    #client .mask .wrapper .pic-holder {
+      text-align: center;
+      line-height: 90px; }
+      #client .mask .wrapper .pic-holder span {
+        padding-left: 10px;
+        padding-right: 10px; }

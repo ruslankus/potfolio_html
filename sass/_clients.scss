@@ -1,36 +1,45 @@
 #client {
+	
+	background: url("/images/clients_backgraund.jpg") no-repeat center; 
+	background-size: cover;
 
-	.wrapper {
+	.mask {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		background: url("/images/header_mask_bg.png");
 
-		h2 {
+		.wrapper {
 
-
-		}
-
-
-		h3 {
-
-
-
-		}
-
-
-		.pic-holder {
-
-
-			span {
-
-				img {
-
-
-
-				}
+			h2 {
+				@include firsextra_light(40px);
+				color: white;
+				text-align: center;
 			}
 
+			h3 {
+				margin-top: 10px;
+				@include helvetika_light(16px);
+				color: #aeaeae;
+				text-align: center;
+			}
 
-		}//.pic-holder
+			.pic-holder {
+				text-align: center;
+				line-height: 90px;
+				span {
+					padding-left: 10px;
+					padding-right: 10px;
+					img {
 
+					}
+				}
 
-	}//wrapper
+			}
+			//.pic-holder
+
+		}
+		//wrapper
+
+	}//mask
 
 }//#clients

@@ -1,0 +1,78 @@
+#aboutme {
+
+	.wrapper {
+
+		padding-top: 55px;
+
+		h2 {
+			@include firsextra_light(40px);
+			color: #2239ac;
+			text-align: center;
+		}
+
+		h3 {
+			margin-top: 10px;
+			@include helvetika_light(16px);
+			color: #aeaeae;
+			text-align: center;
+		}
+
+
+		.descr {
+
+			margin-top: 60px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+			p{
+				margin-bottom: 30px;
+				@include helvetika_light(14px);
+				color: #333333;
+				line-height: 23px;
+				
+			}
+
+
+			div {
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				img {
+					width: 100%;
+					border-radius: 50%;
+
+				}
+			}
+		}//descr
+
+		.sertificates {
+
+			margin-top: 30px;
+
+			h3 {
+				margin-bottom: 20px;
+				@include firsextra_light(25px);
+				color:#aeaeae;
+				text-align: center;
+			}
+
+			.s-holder {
+
+				a {
+					display: inline-block;
+
+					width: 49%;
+					img {
+						width: 100%;
+						display: block;
+
+					}
+				}
+
+			}//s-holder
+
+		}//sertificates
+
+	}//wrapper
+
+}//#aboutme

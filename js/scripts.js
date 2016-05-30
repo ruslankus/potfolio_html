@@ -39,7 +39,7 @@ $(function(){
         console.log(screenHeight, koeff);
         $('header, #top-menu').css('height',screenHeight);
 
-        $(".mask > div > h2").css("margin-top",screenHeight * koeff);
+        $("header .mask > div > h2").css("margin-top",screenHeight * koeff);
     }
     
     
