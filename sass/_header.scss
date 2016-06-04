@@ -1,3 +1,5 @@
+/*-------------------  header  ---------------*/
+
 header {
 	height: 520px;
 	background: url("/images/header_bg.jpg") 85% center no-repeat;
@@ -8,13 +10,20 @@ header {
 		background: url("/images/header_mask_bg.png");
 		
 		
-		div {
+		& > div {
 			
 			background: url("/images/triangle_header.svg") 75% center no-repeat;
 			background-size:cover;
 			opacity: 1;
 			height: 100%;
 			padding-left: 10px;
+
+			@media (min-width: $screen-xs) {
+				padding-left: 20px;
+			}
+
+
+
 
 			h2 {
 				text-transform: capitalize;
@@ -31,6 +40,47 @@ header {
 			h3 {
 				color: white;
 				@include helvetika_light(20px);
+			}
+
+
+			.social-holder {
+				margin-top: 20px;
+				width: 300px;
+				text-align: left;
+				p {
+					color: white;
+					@include helvetika_light(15px);
+					line-height: 23px;
+				}
+
+				hr {
+					width: 90%;
+					border-color:#509eff;
+				}
+
+				a {
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					background-color: white;
+					text-align: center;
+					line-height: 38px;
+					margin-right: 10px;
+
+					& > img  {
+
+						color: #253eb3;
+
+						path {
+							fill: #253eb3;
+						}
+
+					}
+
+				}
+
+
 			}
 
 

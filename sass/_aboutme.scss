@@ -1,5 +1,10 @@
 #aboutme {
 
+	@media (min-width: $screen-sm) {
+		padding-left:20px ;
+		padding-right: 20px;
+	}
+
 	.wrapper {
 
 		padding-top: 55px;
@@ -8,6 +13,11 @@
 			@include firsextra_light(40px);
 			color: #2239ac;
 			text-align: center;
+
+			@media (min-width: $screen-sm) {
+				text-align: left;
+			}
+
 		}
 
 		h3 {
@@ -15,6 +25,10 @@
 			@include helvetika_light(16px);
 			color: #aeaeae;
 			text-align: center;
+
+			@media (min-width: $screen-sm) {
+				text-align: left;
+			}
 		}
 
 
@@ -24,16 +38,27 @@
 			padding-left: 10px;
 			padding-right: 10px;
 
-			p{
-				margin-bottom: 30px;
-				@include helvetika_light(14px);
-				color: #333333;
-				line-height: 23px;
-				
-			}
 
 
-			div {
+			.text-holder {
+
+				p {
+					margin-bottom: 30px;
+					@include helvetika_light(14px);
+					color: #333333;
+					line-height: 23px;
+
+				}
+
+
+				hr {
+					border-color: #2239ac;
+				}
+
+			}//text-holder
+
+
+			.photo-holder {
 				text-align: center;
 				padding-left: 10%;
 				padding-right: 10%;
@@ -43,6 +68,28 @@
 
 				}
 			}
+
+
+			@media (min-width: $screen-sm) {
+				& > div {
+					float: left;
+				}
+
+				& > .photo-holder {
+					width: 50%;
+
+					padding-left: 10px;
+					padding-right: 0;
+
+				}
+
+				& > .text-holder {
+					width: 50%;
+				}
+			}
+
+
+
 		}//descr
 
 		.sertificates {
@@ -54,6 +101,10 @@
 				@include firsextra_light(25px);
 				color:#aeaeae;
 				text-align: center;
+
+				@media (min-width: $screen-sm) {
+					text-align: left;
+				}
 			}
 
 			.s-holder {

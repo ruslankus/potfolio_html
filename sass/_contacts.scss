@@ -4,6 +4,11 @@
 	padding-right: 10px;
 	padding-left: 10px;
 
+	@media (min-width: $screen-sm) {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
 	.wrapper {
 
 		padding-top: 70px;
@@ -17,6 +22,10 @@
 			color: white;
 			text-align: center;
 			text-transform: capitalize;
+
+			@media (min-width: $screen-sm) {
+				text-align: left;
+			}
 		}
 
 		h3 {
@@ -24,26 +33,38 @@
 			@include helvetika_light(16px);
 			color: #4f4f4f;
 			text-align: center;
+
+			@media (min-width: $screen-sm) {
+				text-align: left;
+			}
 		}
 
 		.top-info {
 			margin-top: 20px;
 			div {
+				@media (min-width: $screen-xs) {
 
-				&:first-child{
+					float: left;
+					width: 50%;
+					&:first-child {
+						padding-right: 10px;
+
+					}
+
+					&:last-child {
+						padding-left: 10px;
+					}
+
+
 
 
 				}
 
-
-				&:last-child {
-
-
-				}
 
 				p {
 					color:white;
 					@include helvetika_light(16px);
+
 
 					span {
 						display: inline-block;
@@ -56,6 +77,21 @@
 						&:last-child {
 							text-align: right;
 						}
+
+						@media (min-width: $screen-xs) {
+
+							display: block;
+							float: left;
+							&:first-child {
+								width: 35%;
+							}
+
+							&:last-child {
+								width: 65%;
+							}
+
+						}
+
 					}
 
 				}
@@ -64,7 +100,7 @@
 		}//top-info
 
 		.form-holder {
-
+			margin-top: 50px;
 			form {
 
 				div {
@@ -109,24 +145,23 @@
 						color: white;
 					}
 
-					&.form-name {
+					@media (min-width: $screen-xs) {
+
+						&.form-name {
+							width: 50%;
+							float: left;
+							padding-right: 10px;
+						}
+
+						&.form-email {
+							width: 50%;
+							float: left;
+							padding-left: 10px;
+						}
 
 					}
 
-					&.form-email {
-
-
-					}
-
-					&.form-text {
-
-
-					}
-
-					&.form-submit {
-
-
-					}
+					
 
 
 				}
