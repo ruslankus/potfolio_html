@@ -1571,6 +1571,21 @@ body {
     padding-left: 20px; }
     #top-menu-container.move {
       background-color: rgba(134, 134, 134, 0.8); } }
+@media (min-width: 1200px) {
+  #top-menu-container {
+    padding: 0; } }
+@media (min-width: 1200px) {
+  #top-menu-container nav.navbar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 20px; }
+    #top-menu-container nav.navbar .logo-holder {
+      top: 0; } }
 #top-menu-container nav.navbar button.navbar-toggle {
   position: fixed;
   top: 40px;
@@ -1732,6 +1747,23 @@ header {
                 margin-right: auto;
                 margin-left: auto;
                 width: 70%; } }
+        @media (min-width: 1200px) {
+          header .tri .mask > div {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 20px;
+            padding-left: 20px; }
+            header .tri .mask > div h2, header .tri .mask > div h3 {
+              width: 70%; }
+            header .tri .mask > div h2 {
+              font-size: 60px; }
+            header .tri .mask > div h3 {
+              font-size: 25px; }
+            header .tri .mask > div .social-holder {
+              width: 70%;
+              padding-left: 5%;
+              padding-right: 5%; } }
 
 #portfolio {
   background: #f1f1f1 url(/images/triangle_white_porfolio.svg) 20% center no-repeat;
@@ -1743,6 +1775,16 @@ header {
       #portfolio .container {
         padding-right: 5px;
         padding-left: 5px; } }
+    @media (min-width: 1200px) {
+      #portfolio .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px; }
+        #portfolio .container > div {
+          padding-left: 0;
+          padding-right: 0; } }
     #portfolio .container div h2 {
       font-family: TT_Firs, sans-serif;
       font-weight: 300;
@@ -1814,16 +1856,34 @@ header {
       text-align: center;
       padding-left: 20px;
       padding-right: 20px; }
+    @media (min-width: 1200px) {
+      #service .top > h3, #service .top > p {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px; } }
   #service .bottom {
     background-color: #f1f1f1;
     padding-left: 10px;
     padding-right: 10px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       #service .bottom {
-        padding-left: 20px;
-        padding-right: 20px; } }
+        padding-left: 0;
+        padding-right: 0; } }
     #service .bottom .wrap {
       padding-top: 55px; }
+      @media (min-width: 768px) {
+        #service .bottom .wrap {
+          padding-left: 20px;
+          padding-right: 20px; } }
+      @media (min-width: 1200px) {
+        #service .bottom .wrap {
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-right: 20px;
+          padding-left: 20px; } }
       #service .bottom .wrap h2 {
         font-family: TT_Firs, sans-serif;
         font-weight: 300;
@@ -1870,8 +1930,21 @@ header {
     #aboutme {
       background: url("/images/triangle_about_me.svg") 0% center no-repeat;
       background-size: cover; } }
+  @media (min-width: 1200px) {
+    #aboutme {
+      background: url("/images/triangle_about_me.svg") 0 0 no-repeat;
+      background-size: cover;
+      padding-left: 0;
+      padding-right: 0; } }
   #aboutme .wrapper {
     padding-top: 55px; }
+    @media (min-width: 1200px) {
+      #aboutme .wrapper {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px; } }
     #aboutme .wrapper h2 {
       font-family: TT_Firs, sans-serif;
       font-weight: 300;
@@ -1924,9 +1997,18 @@ header {
             width: 50%; } }
       @media (min-width: 992px) {
         #aboutme .wrapper .descr > .photo-holder {
-          width: 35%; }
+          width: 35%;
+          margin-top: -100px; }
         #aboutme .wrapper .descr > .text-holder {
           width: 65%; } }
+      @media (min-width: 1200px) {
+        #aboutme .wrapper .descr {
+          padding-left: 0;
+          padding-right: 0; }
+          #aboutme .wrapper .descr > .text-holder p {
+            font-size: 16px; }
+          #aboutme .wrapper .descr > .photo-holder {
+            margin-top: -150px; } }
     #aboutme .wrapper .sertificates {
       margin-top: 30px; }
       #aboutme .wrapper .sertificates h3 {
@@ -1944,15 +2026,21 @@ header {
         width: 49%; }
         #aboutme .wrapper .sertificates .s-holder a img {
           width: 100%;
+          max-width: 100%;
           display: block; }
         @media (min-width: 768px) {
           #aboutme .wrapper .sertificates .s-holder a {
             float: left;
+            display: block;
             width: 22%;
             margin-right: 4%;
             border: 1px solid blue; }
             #aboutme .wrapper .sertificates .s-holder a:last-child {
               margin-right: 0; } }
+        @media (min-width: 1200px) {
+          #aboutme .wrapper .sertificates .s-holder a {
+            width: 21%;
+            border: 1px solid blue; } }
 
 #client {
   background: url("/images/clients_backgraund.jpg") no-repeat center;
@@ -1965,6 +2053,16 @@ header {
       #client .mask {
         padding-left: 20px;
         padding-right: 20px; } }
+    @media (min-width: 1200px) {
+      #client .mask {
+        padding-right: 0;
+        padding-left: 0; }
+        #client .mask > .wrapper {
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-right: 20px;
+          padding-left: 20px; } }
     #client .mask .wrapper h2 {
       font-family: TT_Firs, sans-serif;
       font-weight: 300;
@@ -1995,10 +2093,6 @@ header {
   background-color: #282828;
   padding-right: 10px;
   padding-left: 10px; }
-  @media (min-width: 768px) {
-    #contacts {
-      padding-right: 20px;
-      padding-left: 20px; } }
   #contacts .wrapper {
     padding-top: 70px;
     padding-bottom: 45px;
@@ -2081,6 +2175,7 @@ header {
           width: 100%;
           padding-left: 10px;
           color: white;
+          font-size: 16px;
           /* Firefox 19+ */
           /* Firefox 18- */ }
           #contacts .wrapper .form-holder form div input::-webkit-input-placeholder {
@@ -2098,6 +2193,7 @@ header {
           resize: none;
           padding: 8px 0 0 8px;
           color: white;
+          font-size: 16px;
           /* Firefox 19+ */
           /* Firefox 18- */ }
           #contacts .wrapper .form-holder form div textarea::-webkit-input-placeholder {
@@ -2131,6 +2227,53 @@ header {
           float: left;
           margin-top: 20px;
           padding-left: 20px; } }
+    @media (min-width: 1200px) {
+      #contacts .wrapper .top-info {
+        width: 30%; }
+        #contacts .wrapper .top-info div p {
+          line-height: 24px;
+          margin-bottom: 0px; }
+        #contacts .wrapper .top-info div:last-child {
+          margin-top: 52px; }
+      #contacts .wrapper .form-holder {
+        width: 70%;
+        padding-right: 40%;
+        position: relative; }
+        #contacts .wrapper .form-holder form div {
+          margin-bottom: 20px; }
+          #contacts .wrapper .form-holder form div.form-name {
+            width: 100%;
+            float: none;
+            padding-right: 0; }
+          #contacts .wrapper .form-holder form div.form-email {
+            width: 100%;
+            float: left;
+            padding-left: 0; }
+          #contacts .wrapper .form-holder form div.form-text {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%; }
+            #contacts .wrapper .form-holder form div.form-text textarea {
+              height: 192px; }
+          #contacts .wrapper .form-holder form div > input, #contacts .wrapper .form-holder form div > button {
+            height: 50px; } }
+  @media (min-width: 768px) {
+    #contacts {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  @media (min-width: 1200px) {
+    #contacts {
+      padding-right: 0;
+      padding-left: 0;
+      border-bottom: 1px solid #535353; }
+      #contacts > .wrapper {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-bottom: none; } }
 
 footer {
   padding-top: 35px;
@@ -2138,9 +2281,9 @@ footer {
   background-color: #282828;
   padding-left: 20px;
   padding-right: 20px; }
-  footer div.social-holder {
+  footer .wrapper div.social-holder {
     text-align: center; }
-    footer div.social-holder a {
+    footer .wrapper div.social-holder a {
       display: inline-block;
       width: 40px;
       height: 40px;
@@ -2149,31 +2292,41 @@ footer {
       text-align: center;
       line-height: 38px;
       margin-left: 10px; }
-  footer div:last-child {
+  footer .wrapper div:last-child {
     margin-top: 15px; }
-    footer div:last-child p {
+    footer .wrapper div:last-child p {
       color: #656565;
       font-family: Helvetica_eText,sans-serif;
       font-weight: 300;
       font-size: 13px;
       text-align: center; }
-      footer div:last-child p span {
+      footer .wrapper div:last-child p span {
         display: block; }
-        footer div:last-child p span:last-child {
+        footer .wrapper div:last-child p span:last-child {
           font-size: 11px; }
-          footer div:last-child p span:last-child a {
+          footer .wrapper div:last-child p span:last-child a {
             color: inherit;
             text-decoration: underline; }
   @media (min-width: 992px) {
-    footer div {
+    footer .wrapper div {
       width: 45%; }
-      footer div.social-holder {
+      footer .wrapper div.social-holder {
         float: left;
         text-align: left; }
-        footer div.social-holder a:first-child {
+        footer .wrapper div.social-holder a:first-child {
           margin-left: 0; }
-      footer div:last-child {
+      footer .wrapper div:last-child {
         float: right;
         margin-top: 0; }
-        footer div:last-child p {
+        footer .wrapper div:last-child p {
           text-align: right; } }
+  @media (min-width: 1200px) {
+    footer {
+      padding-left: 0px;
+      padding-right: 0px; }
+      footer > .wrapper {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px; } }

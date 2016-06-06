@@ -18,7 +18,27 @@
     }
 
 
+    @media (min-width:$screen-lg) {
+        padding: 0;
+
+    }
+
+
     nav.navbar {
+
+        @media (min-width:$screen-lg) {
+
+           @include max_size;
+            position: relative;
+
+            padding-bottom: 10px;
+            padding-top: 20px;
+
+            .logo-holder {
+                top:0;
+            }
+
+        }
 
         button.navbar-toggle {
             position: fixed;
@@ -63,7 +83,6 @@
 
             }
         }//button
-
 
 
         ul.nav {

@@ -14,9 +14,22 @@
 
 	}
 
+
+	@media (min-width: $screen-lg) {
+		background: url("/images/triangle_about_me.svg") 0 0 no-repeat;
+		background-size: cover;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.wrapper {
 
 		padding-top: 55px;
+
+
+		@media (min-width: $screen-lg) {
+			@include max_size;
+		}
 
 		h2 {
 			@include firsextra_light(40px);
@@ -107,11 +120,32 @@
 
 				& > .photo-holder {
 					width: 35%;
+					margin-top: -100px;
 				}
 
 				& > .text-holder {
 					width: 65%;
 				}
+			}
+
+
+			@media (min-width: $screen-lg) {
+
+				padding-left: 0;
+				padding-right: 0;
+
+
+				& > .text-holder {
+
+					p {
+						font-size: 16px;
+					}
+				}
+
+				& > .photo-holder {
+					margin-top: -150px;
+				}
+
 			}
 
 
@@ -141,6 +175,7 @@
 					width: 49%;
 					img {
 						width: 100%;
+						max-width: 100%;
 						display: block;
 
 					}
@@ -148,6 +183,7 @@
 					@media (min-width: $screen-sm) {
 
 						float: left;
+						display: block;
 						width: 22%;
 						margin-right: 4%;
 						border:1px solid blue;
@@ -155,6 +191,13 @@
 						&:last-child {
 							margin-right: 0;
 						}
+					}
+
+
+					@media (min-width: $screen-lg) {
+
+						width: 21%;
+						border:1px solid blue;
 					}
 
 				}

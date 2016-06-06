@@ -5,90 +5,99 @@ footer {
 	padding-left: 20px;
 	padding-right: 20px;
 
-	div {
+	.wrapper {
 
-		&.social-holder {
-			text-align: center;
+		div {
 
-			a {
-				display: inline-block;
-				width: 40px;
-				height: 40px;
-				background-color: #515151;
-				border-radius: 50%;
+			&.social-holder {
 				text-align: center;
-				line-height: 38px;
-				margin-left: 10px;
-
-
-				img {
-
-
-				}
-			}
-
-		}
-
-		&:last-child {
-			margin-top: 15px;
-
-			p {
-				color:#656565;
-				@include helvetika_light(13px);
-				text-align: center;
-
-				span {
-
-					display: block;
-					&:first-child {
-
-					}
-
-
-					&:last-child {
-						font-size: 11px;
-						a {
-							color: inherit;
-							text-decoration: underline;
-						}
-
-					}
-				}
-
-			}
-		}
-
-		@media (min-width: $screen-md) {
-
-			width: 45%;
-
-			&.social-holder{
-				float: left;
-				text-align: left;
 
 				a {
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					background-color: #515151;
+					border-radius: 50%;
+					text-align: center;
+					line-height: 38px;
+					margin-left: 10px;
 
-					&:first-child {
-						margin-left: 0;
+					img {
+
 					}
 				}
 
 			}
 
-
-
 			&:last-child {
-				float: right;
-				margin-top: 0;
+				margin-top: 15px;
 
 				p {
-					text-align: right;
+					color: #656565;
+					@include helvetika_light(13px);
+					text-align: center;
+
+					span {
+
+						display: block;
+						&:first-child {
+
+						}
+
+						&:last-child {
+							font-size: 11px;
+							a {
+								color: inherit;
+								text-decoration: underline;
+							}
+
+						}
+					}
+
 				}
 			}
 
+			@media (min-width: $screen-md) {
+
+				width: 45%;
+
+				&.social-holder {
+					float: left;
+					text-align: left;
+
+					a {
+
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+
+				}
+
+				&:last-child {
+					float: right;
+					margin-top: 0;
+
+					p {
+						text-align: right;
+					}
+				}
+
+			}
+
+		}//div
+
+	}//wrapper
+
+
+	@media (min-width: $screen-lg) {
+
+		padding-left: 0px;
+		padding-right: 0px;
+
+		& > .wrapper {
+			@include max_size;
 		}
-
-	}//div
-
+	}
 
 }

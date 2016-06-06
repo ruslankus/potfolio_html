@@ -4,11 +4,6 @@
 	padding-right: 10px;
 	padding-left: 10px;
 
-	@media (min-width: $screen-sm) {
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-
 	.wrapper {
 
 		padding-top: 70px;
@@ -144,6 +139,7 @@
 						width: 100%;
 						padding-left: 10px;
 						color: white;
+						font-size: 16px;
 						&::-webkit-input-placeholder {color:#919191;}
 						&::-moz-placeholder          {color:#919191;}/* Firefox 19+ */
 						&:-moz-placeholder           {color:#919191;}/* Firefox 18- */
@@ -158,6 +154,7 @@
 						resize: none;
 						padding:8px 0 0 8px;
 						color: white;
+						font-size: 16px;
 						&::-webkit-input-placeholder {color:#919191;}
 						&::-moz-placeholder          {color:#919191;}/* Firefox 19+ */
 						&:-moz-placeholder           {color:#919191;}/* Firefox 18- */
@@ -189,7 +186,7 @@
 
 					}
 
-					
+
 
 
 				}
@@ -203,6 +200,99 @@
 			}
 
 		}//form-holder
+
+		@media (min-width: $screen-lg) {
+
+			.top-info{
+
+				width: 30%;
+
+				div {
+
+					p {
+						line-height: 24px;
+						margin-bottom: 0px;
+					}
+
+					&:first-child {
+
+
+					}
+
+					&:last-child {
+						margin-top: 52px;
+
+					}
+
+
+				}
+			}
+
+
+			.form-holder {
+				width: 70%;
+				padding-right: 40%;
+				position: relative;
+				form {
+
+					div {
+						margin-bottom: 20px;
+						&.form-name {
+							width: 100%;
+							float: none;
+							padding-right: 0;
+						}
+
+						&.form-email {
+							width: 100%;
+							float: left;
+							padding-left: 0;
+						}
+
+						&.form-text {
+							position: absolute;
+							top:0;
+							right: 0;
+							width: 55%;
+
+							textarea {
+								height: 192px;
+							}
+
+						}
+
+						& > input, & > button {
+
+							height: 50px;
+						}
+
+
+					}
+				}
+
+			}
+
+		}
+
+
+	}
+
+	@media (min-width: $screen-sm) {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	@media (min-width: $screen-lg) {
+
+		padding-right: 0;
+		padding-left: 0;
+		border-bottom: 1px solid #535353;
+		& > .wrapper {
+
+			@include max_size;
+			border-bottom: none;
+		}
 	}
 
 }

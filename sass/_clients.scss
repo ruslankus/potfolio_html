@@ -15,7 +15,20 @@
 			padding-right: 20px;
 		}
 
+
+		@media (min-width: $screen-lg) {
+
+			padding-right: 0;
+			padding-left: 0;
+
+			& > .wrapper {
+
+				@include max_size;
+			}
+		}
+
 		.wrapper {
+
 
 			h2 {
 				@include firsextra_light(40px);
