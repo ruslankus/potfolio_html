@@ -55,9 +55,6 @@
 						padding-left: 10px;
 					}
 
-
-
-
 				}
 
 
@@ -96,6 +93,37 @@
 
 				}
 			}
+
+
+			@media (min-width: $screen-md) {
+				width: 40%;
+				float: left;
+
+				div {
+
+					float: none;
+					width: 100%;
+
+					&:first-child {
+						padding-right: 0;
+
+					}
+
+					&:last-child {
+						padding-left: 0;
+						margin-top: 60px;
+					}
+
+
+					p {
+						line-height: 28px;
+					}
+
+				}
+
+			}
+
+
 
 		}//top-info
 
@@ -166,7 +194,15 @@
 
 				}
 			}
-		}
+
+			@media (min-width: $screen-md) {
+				width: 60%;
+				float: left;
+				margin-top: 20px;
+				padding-left: 20px;
+			}
+
+		}//form-holder
 	}
 
 }

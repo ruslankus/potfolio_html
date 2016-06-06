@@ -2,6 +2,8 @@ footer {
 	padding-top: 35px;
 	padding-bottom: 15px;
 	background-color: #282828;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	div {
 
@@ -55,7 +57,38 @@ footer {
 
 			}
 		}
-	}
+
+		@media (min-width: $screen-md) {
+
+			width: 45%;
+
+			&.social-holder{
+				float: left;
+				text-align: left;
+
+				a {
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+
+			}
+
+
+
+			&:last-child {
+				float: right;
+				margin-top: 0;
+
+				p {
+					text-align: right;
+				}
+			}
+
+		}
+
+	}//div
 
 
 }

@@ -3,15 +3,17 @@
 	background: url("/images/clients_backgraund.jpg") no-repeat center; 
 	background-size: cover;
 
-	@media (min-width: $screen-sm) {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+
 
 	.mask {
 		padding-top: 70px;
 		padding-bottom: 70px;
 		background: url("/images/header_mask_bg.png");
+
+		@media (min-width: $screen-sm) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 
 		.wrapper {
 

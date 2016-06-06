@@ -1,8 +1,17 @@
 #aboutme {
 
+	padding-bottom: 40px;
+
 	@media (min-width: $screen-sm) {
 		padding-left:20px ;
 		padding-right: 20px;
+	}
+
+
+	@media (min-width: $screen-md) {
+		background: url("/images/triangle_about_me.svg") 0% center no-repeat;
+		background-size: cover;
+
 	}
 
 	.wrapper {
@@ -76,7 +85,7 @@
 				}
 
 				& > .photo-holder {
-					width: 50%;
+					width: 40%;
 
 					padding-left: 10px;
 					padding-right: 0;
@@ -84,7 +93,24 @@
 				}
 
 				& > .text-holder {
-					width: 50%;
+					width: 60%;
+
+
+					hr {
+						width:50%;
+					}
+				}
+			}
+
+
+			@media (min-width: $screen-md) {
+
+				& > .photo-holder {
+					width: 35%;
+				}
+
+				& > .text-holder {
+					width: 65%;
 				}
 			}
 
@@ -118,6 +144,19 @@
 						display: block;
 
 					}
+
+					@media (min-width: $screen-sm) {
+
+						float: left;
+						width: 22%;
+						margin-right: 4%;
+						border:1px solid blue;
+
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+
 				}
 
 			}//s-holder

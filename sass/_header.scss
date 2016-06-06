@@ -4,87 +4,146 @@ header {
 	height: 520px;
 	background: url("/images/header_bg.jpg") 85% center no-repeat;
 	background-size: cover;
-	
-	.mask {
+
+
+	.tri {
+
+		background: url("/images/triangle_header.svg") 75% center no-repeat;
+		background-size: cover;
+		opacity: 1;
 		height: 100%;
-		background: url("/images/header_mask_bg.png");
-		
-		
-		& > div {
-			
-			background: url("/images/triangle_header.svg") 75% center no-repeat;
-			background-size:cover;
-			opacity: 1;
+
+		.mask {
 			height: 100%;
-			padding-left: 10px;
+			background: url("/images/header_mask_bg.png");
 
-			@media (min-width: $screen-xs) {
-				padding-left: 20px;
-			}
+			& > div {
 
 
+				padding-left: 10px;
 
-
-			h2 {
-				text-transform: capitalize;
-				margin-top: 50%;
-				color: white;
-				@include firsextra_bold(40px);
-				text-align: left;
-
-				span {
-					display: block;
+				@media (min-width: $screen-xs) {
+					padding-left: 20px;
 				}
-			}
-
-			h3 {
-				color: white;
-				@include helvetika_light(20px);
-			}
 
 
-			.social-holder {
-				margin-top: 20px;
-				width: 300px;
-				text-align: left;
-				p {
+				h2 {
+					text-transform: capitalize;
+					margin-top: 50%;
 					color: white;
-					@include helvetika_light(15px);
-					line-height: 23px;
+					@include firsextra_bold(40px);
+					text-align: left;
+
+					span {
+						display: block;
+					}
+
 				}
 
-				hr {
-					width: 90%;
-					border-color:#509eff;
-				}
+				h3 {
+					color: white;
+					@include helvetika_light(20px);
 
-				a {
-					display: inline-block;
-					width: 40px;
-					height: 40px;
-					border-radius: 50%;
-					background-color: white;
-					text-align: center;
-					line-height: 38px;
-					margin-right: 10px;
-
-					& > img  {
-
-						color: #253eb3;
-
-						path {
-							fill: #253eb3;
+					span {
+						text-transform: capitalize;
+						&:first-child{
+							text-transform: uppercase;
 						}
-
 					}
 
 				}
 
 
+				.social-holder {
+					margin-top: 20px;
+					width: 300px;
+					text-align: left;
+					p {
+						color: white;
+						@include helvetika_light(15px);
+						line-height: 23px;
+					}
+
+					hr {
+						width: 90%;
+						border-color: #509eff;
+					}
+
+					a {
+						display: inline-block;
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background-color: white;
+						text-align: center;
+						line-height: 38px;
+						margin-right: 10px;
+
+						& > img {
+
+							color: #253eb3;
+
+							path {
+								fill: #253eb3;
+							}
+
+						}
+
+					}
+
+				}//social-holder
+
+
+
+				@media (min-width: $screen-md) {
+
+					width: 60%;
+
+
+					h2 {
+						text-align: center;
+
+						span {
+							display: inline;
+						}
+					}
+
+
+					h3 {
+						text-align: center;
+
+					}
+
+					.social-holder {
+
+						width: 100%;
+						padding-left: 15%;
+						padding-right: 15%;
+						text-align: center;
+
+						p {
+
+						}
+
+						hr {
+							margin-right: auto;
+							margin-left: auto;
+							width: 70%;
+						}
+					}
+
+
+				}//media
+
+
+
+
+
+
+
 			}
+		}//mask
 
-
-		}
-	}
+	}// tri
 	
 }

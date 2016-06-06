@@ -63,7 +63,22 @@
 
 
 					@media (min-width: $screen-md) {
-						width: 33%;
+						width: 31%;
+						margin-right:3.5%;
+
+						&:nth-child(odd){
+							padding-right: 0px;
+						}
+
+
+						&:nth-child(even){
+							padding-left: 0px;
+						}
+
+						&:nth-child(3n+3){
+							margin-right: 0px;
+						}
+
 					}
 
 					a {
