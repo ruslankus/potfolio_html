@@ -97,11 +97,85 @@
 					a {
 						display: block;
 						width: 100%;
-
+						position: relative;
+						overflow: hidden;
 						img {
 							border: 1px solid #e1e1e1;
 							display: block;
 							width: 100%;
+						}
+
+
+						.out_mask {
+							position: absolute;
+							height: 100%;
+							width: 100%;
+							top: -100%;
+							background: url("/images/portfolio_mask_bg.png");
+							transition: top 0.3s;
+
+							.dsc {
+								width: 100%;
+								position: absolute;
+								bottom: 0;
+								text-align: center;
+								padding-bottom: 25px;
+
+								span {
+									display:block;
+
+
+
+									&.title {
+										@include firsextra_light(25px);
+										color: white;
+									}
+
+									&.icon-holder {
+										display: inline-block;
+										color: white;
+										width: 40px;
+										height: 40px;
+										border:2px solid white;
+										border-radius: 50%;
+										line-height: 36px;
+
+										span {
+											font-size: 28px;
+											color:white;
+										}
+									}
+
+									&:last-child {
+										@include helvetika_light(13px);
+										color: #4bc2ff;
+									}
+								}
+							}
+
+						}//out_mask
+
+						@media (min-width: $screen-md) {
+
+							&:hover {
+
+								.out_mask {
+
+									top:0;
+
+									.dsc {
+
+										.icon-holder {
+
+											@media (min-width: $screen-lg) {
+												margin-bottom: 20px;
+											}
+										}
+									}
+								}
+
+							}
+
 						}
 
 					}//a

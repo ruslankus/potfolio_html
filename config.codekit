@@ -271,6 +271,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/portfolio_mask_bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 991,
+		"inputAbbreviatedPath": "\/images\/portfolio_mask_bg.png",
+		"outputAbbreviatedPath": "\/images\/portfolio_mask_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/sass-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,

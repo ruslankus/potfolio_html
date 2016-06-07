@@ -1828,11 +1828,55 @@ header {
               margin-right: 0px; } }
         #portfolio .container div .portfolio-holder .project a {
           display: block;
-          width: 100%; }
+          width: 100%;
+          position: relative;
+          overflow: hidden; }
           #portfolio .container div .portfolio-holder .project a img {
             border: 1px solid #e1e1e1;
             display: block;
             width: 100%; }
+          #portfolio .container div .portfolio-holder .project a .out_mask {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: -100%;
+            background: url("/images/portfolio_mask_bg.png");
+            transition: top 0.3s; }
+            #portfolio .container div .portfolio-holder .project a .out_mask .dsc {
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              text-align: center;
+              padding-bottom: 25px; }
+              #portfolio .container div .portfolio-holder .project a .out_mask .dsc span {
+                display: block; }
+                #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.title {
+                  font-family: TT_Firs, sans-serif;
+                  font-weight: 300;
+                  font-size: 25px;
+                  color: white; }
+                #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.icon-holder {
+                  display: inline-block;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                  border: 2px solid white;
+                  border-radius: 50%;
+                  line-height: 36px; }
+                  #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.icon-holder span {
+                    font-size: 28px;
+                    color: white; }
+                #portfolio .container div .portfolio-holder .project a .out_mask .dsc span:last-child {
+                  font-family: Helvetica_eText,sans-serif;
+                  font-weight: 300;
+                  font-size: 13px;
+                  color: #4bc2ff; }
+          @media (min-width: 992px) {
+            #portfolio .container div .portfolio-holder .project a:hover .out_mask {
+              top: 0; } }
+  @media (min-width: 992px) and (min-width: 1200px) {
+    #portfolio .container div .portfolio-holder .project a:hover .out_mask .dsc .icon-holder {
+      margin-bottom: 20px; } }
 
 #service {
   background: url("/images/services-bg.jpg") center no-repeat;
