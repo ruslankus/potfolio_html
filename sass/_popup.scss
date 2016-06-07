@@ -1,0 +1,33 @@
+#popup {
+
+	position: fixed;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	top: 0;
+	background-color: white;
+
+	.content {
+		position: relative;
+		height: 200%;
+		div {
+			width: 100%;
+			h2 {
+
+				text-align: center;
+			}
+
+			&:first-child {
+				position: absolute;
+				top: 0;
+			}
+
+			&:last-child {
+				position: absolute;
+				bottom: 0;
+			}
+
+		}
+	}//content
+}

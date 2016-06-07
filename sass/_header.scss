@@ -139,6 +139,7 @@ header {
 
 				@media (min-width: $screen-lg) {
 
+					width: 67%;
 					@include max_size;
 
 					h2, h3 {

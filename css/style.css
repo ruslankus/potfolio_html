@@ -1579,8 +1579,8 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     position: relative;
     padding-bottom: 10px;
     padding-top: 20px; }
@@ -1749,11 +1749,12 @@ header {
                 width: 70%; } }
         @media (min-width: 1200px) {
           header .tri .mask > div {
+            width: 67%;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
-            padding-right: 20px;
-            padding-left: 20px; }
+            padding-right: 30px;
+            padding-left: 30px; }
             header .tri .mask > div h2, header .tri .mask > div h3 {
               width: 70%; }
             header .tri .mask > div h2 {
@@ -1780,8 +1781,8 @@ header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 20px;
-        padding-left: 20px; }
+        padding-right: 30px;
+        padding-left: 30px; }
         #portfolio .container > div {
           padding-left: 0;
           padding-right: 0; } }
@@ -1840,8 +1841,7 @@ header {
             height: 100%;
             width: 100%;
             top: -100%;
-            background: url("/images/portfolio_mask_bg.png");
-            transition: top 0.3s; }
+            background: url("/images/portfolio_mask_bg.png"); }
             #portfolio .container div .portfolio-holder .project a .out_mask .dsc {
               width: 100%;
               position: absolute;
@@ -1866,17 +1866,19 @@ header {
                   #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.icon-holder span {
                     font-size: 28px;
                     color: white; }
+                  @media (min-width: 1200px) {
+                    #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.icon-holder {
+                      margin-bottom: 20px; } }
                 #portfolio .container div .portfolio-holder .project a .out_mask .dsc span:last-child {
                   font-family: Helvetica_eText,sans-serif;
                   font-weight: 300;
                   font-size: 13px;
                   color: #4bc2ff; }
           @media (min-width: 992px) {
+            #portfolio .container div .portfolio-holder .project a .out_mask {
+              transition: top 0.5s; }
             #portfolio .container div .portfolio-holder .project a:hover .out_mask {
               top: 0; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    #portfolio .container div .portfolio-holder .project a:hover .out_mask .dsc .icon-holder {
-      margin-bottom: 20px; } }
 
 #service {
   background: url("/images/services-bg.jpg") center no-repeat;
@@ -1905,8 +1907,8 @@ header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 20px;
-        padding-left: 20px; } }
+        padding-right: 30px;
+        padding-left: 30px; } }
   #service .bottom {
     background-color: #f1f1f1;
     padding-left: 10px;
@@ -1926,8 +1928,8 @@ header {
           max-width: 1200px;
           margin-left: auto;
           margin-right: auto;
-          padding-right: 20px;
-          padding-left: 20px; } }
+          padding-right: 30px;
+          padding-left: 30px; } }
       #service .bottom .wrap h2 {
         font-family: TT_Firs, sans-serif;
         font-weight: 300;
@@ -1987,8 +1989,8 @@ header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 20px;
-        padding-left: 20px; } }
+        padding-right: 30px;
+        padding-left: 30px; } }
     #aboutme .wrapper h2 {
       font-family: TT_Firs, sans-serif;
       font-weight: 300;
@@ -2105,8 +2107,8 @@ header {
           max-width: 1200px;
           margin-left: auto;
           margin-right: auto;
-          padding-right: 20px;
-          padding-left: 20px; } }
+          padding-right: 30px;
+          padding-left: 30px; } }
     #client .mask .wrapper h2 {
       font-family: TT_Firs, sans-serif;
       font-weight: 300;
@@ -2273,15 +2275,16 @@ header {
           padding-left: 20px; } }
     @media (min-width: 1200px) {
       #contacts .wrapper .top-info {
-        width: 30%; }
+        width: 23%; }
         #contacts .wrapper .top-info div p {
           line-height: 24px;
           margin-bottom: 0px; }
         #contacts .wrapper .top-info div:last-child {
           margin-top: 52px; }
       #contacts .wrapper .form-holder {
-        width: 70%;
-        padding-right: 40%;
+        width: 77%;
+        padding-right: 51.7%;
+        padding-left: 30px;
         position: relative; }
         #contacts .wrapper .form-holder form div {
           margin-bottom: 20px; }
@@ -2297,7 +2300,7 @@ header {
             position: absolute;
             top: 0;
             right: 0;
-            width: 55%; }
+            width: 63.6%; }
             #contacts .wrapper .form-holder form div.form-text textarea {
               height: 192px; }
           #contacts .wrapper .form-holder form div > input, #contacts .wrapper .form-holder form div > button {
@@ -2315,8 +2318,8 @@ header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
         border-bottom: none; } }
 
 footer {
@@ -2372,5 +2375,28 @@ footer {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 20px;
-        padding-left: 20px; } }
+        padding-right: 30px;
+        padding-left: 30px; } }
+
+/*------------------------- popup section --------------------------*/
+#popup {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  background-color: white; }
+  #popup .content {
+    position: relative;
+    height: 200%; }
+    #popup .content div {
+      width: 100%; }
+      #popup .content div h2 {
+        text-align: center; }
+      #popup .content div:first-child {
+        position: absolute;
+        top: 0; }
+      #popup .content div:last-child {
+        position: absolute;
+        bottom: 0; }
