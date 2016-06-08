@@ -9,25 +9,90 @@
 	background-color: white;
 
 	.content {
-		position: relative;
-		height: 200%;
-		div {
-			width: 100%;
-			h2 {
-
+		padding: 20px 10px;
+		.top-cross {
+				text-align: right;
+			span {
+				display: inline-block;
 				text-align: center;
+				line-height: 32px;
+				width: 40px;
+				height: 40px;
+				font-size: 36px;
+				color: #2239ac;
+				border: 1px solid  #2239ac;
+			}
+		}//top-cross
+
+
+		.info {
+
+			.head {
+
+				h3 {
+					@include firsextra_bold(28px);
+					color: #2239ac;
+				}
+
+
+				p {
+					color: #282828;
+					@include helvetika_light(18px);
+				}
+			}//head
+
+			.descr {
+
+				p{
+					color: #282828;
+					@include helvetika_light(14px);
+				}
+			}//descr
+
+
+			.foto-holder {
+
+				.thumb-holder {
+
+					span {
+						display: block;
+						margin-bottom: 10px;
+						img {
+							display: block;
+							width: 100%;
+						}
+					}
+
+				}//thumb-holder
+
+
+				.big-photo {
+					display: none;
+					img {
+
+
+					}
+				}
+
+			}//foto-holder
+
+
+		}//info
+
+		.button-holder {
+			text-align: center;
+			button {
+				height: 46px;
+				line-height: 46px;
+				width: 60%;
+				border-radius: 0;
+				border:0;
+				background-color: #2239ac;
+				color:white;
+				@include helvetika_light(16px);
 			}
 
-			&:first-child {
-				position: absolute;
-				top: 0;
-			}
+		}//button-holder
 
-			&:last-child {
-				position: absolute;
-				bottom: 0;
-			}
-
-		}
 	}//content
 }

@@ -51,6 +51,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/big-photo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32128,
+		"inputAbbreviatedPath": "\/images\/big-photo.jpg",
+		"outputAbbreviatedPath": "\/images\/big-photo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bootsrap-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
