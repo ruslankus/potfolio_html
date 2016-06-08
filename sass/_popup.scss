@@ -21,6 +21,10 @@
 				font-size: 36px;
 				color: #2239ac;
 				border: 1px solid  #2239ac;
+
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}//top-cross
 
@@ -93,6 +97,12 @@
 			}
 
 		}//button-holder
+
+/*------------  media section -------------------*/
+
+		@media (min-width: $screen-sm) {
+
+		}
 
 	}//content
 }
