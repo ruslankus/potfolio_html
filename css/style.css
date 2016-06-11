@@ -1558,6 +1558,8 @@ body {
   body h1, body h2, body h3, body h4 {
     margin-bottom: 0;
     margin-top: 0; }
+  body.pop {
+    overflow: hidden; }
 
 /* -- top-menu ----*/
 @media (min-width: 768px) {
@@ -1822,11 +1824,11 @@ header {
             width: 31%;
             margin-right: 3.5%; }
             #portfolio .container div .portfolio-holder .project:nth-child(odd) {
-              padding-right: 0px; }
+              padding-right: 0; }
             #portfolio .container div .portfolio-holder .project:nth-child(even) {
-              padding-left: 0px; }
+              padding-left: 0; }
             #portfolio .container div .portfolio-holder .project:nth-child(3n+3) {
-              margin-right: 0px; } }
+              margin-right: 0; } }
         #portfolio .container div .portfolio-holder .project a {
           display: block;
           width: 100%;
@@ -1840,14 +1842,16 @@ header {
             position: absolute;
             height: 100%;
             width: 100%;
-            top: -100%;
+            top: 0;
+            opacity: 0;
             background: url("/images/portfolio_mask_bg.png"); }
             #portfolio .container div .portfolio-holder .project a .out_mask .dsc {
               width: 100%;
               position: absolute;
               bottom: 0;
               text-align: center;
-              padding-bottom: 25px; }
+              padding-bottom: 25px;
+              height: 0; }
               #portfolio .container div .portfolio-holder .project a .out_mask .dsc span {
                 display: block; }
                 #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.title {
@@ -1862,7 +1866,8 @@ header {
                   height: 40px;
                   border: 2px solid white;
                   border-radius: 50%;
-                  line-height: 36px; }
+                  line-height: 36px;
+                  opacity: 0; }
                   #portfolio .container div .portfolio-holder .project a .out_mask .dsc span.icon-holder span {
                     font-size: 28px;
                     color: white; }
@@ -1876,9 +1881,19 @@ header {
                   color: #4bc2ff; }
           @media (min-width: 992px) {
             #portfolio .container div .portfolio-holder .project a .out_mask {
-              transition: top 0.5s; }
+              transition: opacity 0.3s;
+              transition-timing-function: linear; }
             #portfolio .container div .portfolio-holder .project a:hover .out_mask {
-              top: 0; } }
+              opacity: 1; }
+              #portfolio .container div .portfolio-holder .project a:hover .out_mask .dsc {
+                transition-delay: 0s;
+                transition-duration: 0.5s;
+                height: 120px; }
+                #portfolio .container div .portfolio-holder .project a:hover .out_mask .dsc span.icon-holder {
+                  opacity: 1; } }
+          @media (min-width: 1200px) {
+            #portfolio .container div .portfolio-holder .project a:hover .out_mask .dsc {
+              height: 150px; } }
 
 #service {
   background: url("/images/services-bg.jpg") center no-repeat;
@@ -2386,10 +2401,10 @@ footer {
   height: 100%;
   overflow-y: scroll;
   top: 0;
-  background-color: white; }
+  background-color: white;
+  /* -------------------------------- media query sections  --------------------------------*/ }
   #popup .content {
-    padding: 20px 10px;
-    /*------------  media section -------------------*/ }
+    padding: 20px 10px; }
     #popup .content .top-cross {
       text-align: right; }
       #popup .content .top-cross span {
@@ -2403,29 +2418,31 @@ footer {
         border: 1px solid  #2239ac; }
         #popup .content .top-cross span:hover {
           cursor: pointer; }
-    #popup .content .info .head h3 {
-      font-family: TT_Firs, sans-serif;
-      font-weight: 700;
-      font-size: 28px;
-      color: #2239ac; }
-    #popup .content .info .head p {
-      color: #282828;
-      font-family: Helvetica_eText,sans-serif;
-      font-weight: 300;
-      font-size: 18px; }
-    #popup .content .info .descr p {
-      color: #282828;
-      font-family: Helvetica_eText,sans-serif;
-      font-weight: 300;
-      font-size: 14px; }
-    #popup .content .info .foto-holder .thumb-holder span {
-      display: block;
-      margin-bottom: 10px; }
-      #popup .content .info .foto-holder .thumb-holder span img {
+    #popup .content .info {
+      padding-bottom: 30px; }
+      #popup .content .info .head h3 {
+        font-family: TT_Firs, sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #2239ac; }
+      #popup .content .info .head p {
+        color: #282828;
+        font-family: Helvetica_eText,sans-serif;
+        font-weight: 300;
+        font-size: 18px; }
+      #popup .content .info .descr p {
+        color: #282828;
+        font-family: Helvetica_eText,sans-serif;
+        font-weight: 300;
+        font-size: 14px; }
+      #popup .content .info .foto-holder .thumb-holder span {
         display: block;
-        width: 100%; }
-    #popup .content .info .foto-holder .big-photo {
-      display: none; }
+        margin-bottom: 10px; }
+        #popup .content .info .foto-holder .thumb-holder span img {
+          display: block;
+          width: 100%; }
+      #popup .content .info .foto-holder .big-photo {
+        display: none; }
     #popup .content .button-holder {
       text-align: center; }
       #popup .content .button-holder button {
@@ -2439,6 +2456,49 @@ footer {
         font-family: Helvetica_eText,sans-serif;
         font-weight: 300;
         font-size: 16px; }
+  @media (min-width: 768px) {
+    #popup .content {
+      position: relative; }
+      #popup .content .top-cross {
+        position: absolute;
+        width: 100%;
+        top: 0; }
+        #popup .content .top-cross span {
+          margin-top: 10px;
+          margin-right: 20px; }
+      #popup .content .info {
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto; }
+        #popup .content .info .foto-holder .thumb-holder span {
+          display: block;
+          float: left;
+          width: 30%;
+          margin-right: 5%;
+          position: relative;
+          overflow: hidden; }
+          #popup .content .info .foto-holder .thumb-holder span:hover {
+            cursor: pointer; }
+          #popup .content .info .foto-holder .thumb-holder span:last-child {
+            margin-right: 0; }
+          #popup .content .info .foto-holder .thumb-holder span .mask {
+            background: url("/images/portfolio_mask_bg.png");
+            height: 100%;
+            width: 100%;
+            top: -100%;
+            display: block;
+            position: absolute;
+            transition: top 0.1s; }
+          #popup .content .info .foto-holder .thumb-holder span.active .mask {
+            top: 0; }
+          #popup .content .info .foto-holder .thumb-holder span img {
+            display: block;
+            max-width: 100%; }
+        #popup .content .info .foto-holder .big-photo {
+          display: block; }
+          #popup .content .info .foto-holder .big-photo img {
+            display: block;
+            width: 100%; } }
 
 #loader {
   position: fixed;

@@ -75,6 +75,8 @@ $(function(){
             var popup = $("<div />").attr('id','popup');
             popup.load('partial.html',function () {
                 $('footer').after(this);
+                //add class to body
+                $('body').addClass('pop');
                 destoySpinner();
 
                 //registrium close
@@ -83,8 +85,28 @@ $(function(){
                     $("#popup").animate({
                         opacity: 0
                     },1000,function () {
+                        $('body').removeClass('pop');
                         $(this).remove();
                     })
+
+                });
+
+
+                //registriruem clicks po photu thump
+                $(".thumb-holder > span").click(function () {
+
+                    $(".thumb-holder > span").removeClass('active');
+                    var href = $(this).find("img").attr('src');
+
+                    $("#big-photo > img").animate({
+                        opacity:0
+                    },200,function () {
+                        $(this).attr('src',href).animate({
+                            opacity:1
+                        },300)
+                    });
+
+                    $(this).addClass('active');
 
                 });
 
@@ -114,6 +136,10 @@ $(function(){
 
         var loader = spinnerHolder.append(row.append(cell.append(img)));
 
+        //ckecking height
+        var screenHeight = window.innerHeight;
+
+        $('#loader').css('height',screenHeight);
 
         console.log(loader);
         return loader;
@@ -135,6 +161,7 @@ $(function(){
             opacity: 0
         },1000,function () {
             $(this).remove();
+
         })
 
     }

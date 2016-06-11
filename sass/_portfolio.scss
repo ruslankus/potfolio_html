@@ -80,16 +80,16 @@
 						margin-right:3.5%;
 
 						&:nth-child(odd){
-							padding-right: 0px;
+							padding-right: 0;
 						}
 
 
 						&:nth-child(even){
-							padding-left: 0px;
+							padding-left: 0;
 						}
 
 						&:nth-child(3n+3){
-							margin-right: 0px;
+							margin-right: 0;
 						}
 
 					}
@@ -110,7 +110,8 @@
 							position: absolute;
 							height: 100%;
 							width: 100%;
-							top: -100%;
+							top: 0;
+							opacity: 0;
 							background: url("/images/portfolio_mask_bg.png");
 
 
@@ -120,6 +121,7 @@
 								bottom: 0;
 								text-align: center;
 								padding-bottom: 25px;
+								height: 0;
 
 								span {
 									display:block;
@@ -135,10 +137,11 @@
 										display: inline-block;
 										color: white;
 										width: 40px;
-										height: 40px;
+										height:40px;
 										border:2px solid white;
 										border-radius: 50%;
 										line-height: 36px;
+										opacity: 0;
 
 										span {
 											font-size: 28px;
@@ -162,19 +165,67 @@
 						@media (min-width: $screen-md) {
 
 							.out_mask {
-								transition: top 0.5s;
+								transition: opacity 0.3s;
+								transition-timing-function: linear;
+								.dsc {
+
+
+									span {
+
+										&.title {
+
+										}
+									}
+
+								}
 							}
 
 							&:hover {
 
 								.out_mask {
 
-									top:0;
+									opacity:1;
+
+									.dsc {
+										transition-delay:0.0s ;
+										transition-duration: 0.5s;
+										height: 120px;
+
+										span {
+
+											&.icon-holder {
+
+												opacity: 1;
+											}
+
+
+											&.title {
+
+
+											}
+										}
+									}
 
 								}
 
-							}
+							}//hover
 
+						}//media md
+
+
+						@media (min-width: $screen-lg) {
+
+							&:hover {
+
+								.out_mask {
+
+									.dsc {
+
+										height: 150px;
+
+									}
+								}
+							}
 						}
 
 					}//a

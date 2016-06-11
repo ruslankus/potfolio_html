@@ -30,7 +30,7 @@
 
 
 		.info {
-
+			padding-bottom: 30px;
 			.head {
 
 				h3 {
@@ -98,11 +98,98 @@
 
 		}//button-holder
 
-/*------------  media section -------------------*/
 
-		@media (min-width: $screen-sm) {
-
-		}
 
 	}//content
+
+/* -------------------------------- media query sections  --------------------------------*/
+	@media (min-width: $screen-sm) {
+		.content {
+			position: relative;
+
+			.top-cross {
+				position: absolute;
+				width: 100%;
+				top:0;
+				span {
+					margin-top: 10px;
+					margin-right: 20px;
+				}
+			}
+			//top cros
+
+			.info {
+				max-width: 800px;
+				margin-right: auto;
+				margin-left: auto;
+				.head {
+
+				}
+
+				.descr {
+
+				}
+
+				.foto-holder {
+
+					.thumb-holder {
+
+						span {
+							display: block;
+							float: left;
+							width: 30%;
+							margin-right: 5%;
+							position: relative;
+							overflow: hidden;
+
+							&:hover {
+								cursor: pointer;
+							}
+
+							&:last-child {
+								margin-right: 0;
+							}
+
+							.mask {
+								background: url("/images/portfolio_mask_bg.png");
+								height: 100%;
+								width: 100%;
+								top:-100%;
+								display: block;
+								position: absolute;
+								transition: top 0.1s;
+							}
+
+							&.active {
+								.mask {
+									top:0;
+								}
+							}
+
+
+							img {
+								display: block;
+								max-width: 100%;
+
+							}
+						}
+
+					}
+
+					.big-photo {
+
+						display: block;
+
+						img{
+							display: block;
+							width: 100%;
+
+						}
+					}
+
+				}//foto-holder
+			}
+			//info
+		}
+	}//media sm
 }
