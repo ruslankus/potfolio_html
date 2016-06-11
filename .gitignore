@@ -4,3 +4,6 @@
 
 node_modules/
 sass/.sass-cache/*
+/.codekit-cache/
+/config.codekit
+/.idea/workspace.xml
