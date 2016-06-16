@@ -7,13 +7,15 @@
         position: fixed;
         width: 100%;
         z-index: 10;
-        background-color: rgba(134,134,134,0.4);
+        //background-color: rgba(134,134,134,0.4);
+        background-color: rgba(0,0,0,0.05);
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 20px;
 
         &.move {
-            background-color: rgba(134,134,134,0.8);
+            //background-color: rgba(134,134,134,0.8);
+            background-color: rgba(0,0,0,0.4);
         }
     }
 

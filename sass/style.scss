@@ -6,6 +6,9 @@
 
 /*--------------------- my code begining ------------------*/
 
+//very big size
+$screen-extra-lg:                  1500px !default;
+
 @mixin max_size{
 	max-width: 1200px;
 	margin-left: auto;
@@ -13,6 +16,9 @@
 	padding-right: 30px;
 	padding-left: 30px;
 }
+
+
+
 
 * {
 	margin:0;

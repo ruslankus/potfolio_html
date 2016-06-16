@@ -6,10 +6,15 @@
 	height: 100%;
 	overflow-y: scroll;
 	top: 0;
-	background-color: white;
+	background:#f1f1f1 url("/images/popup_bg.png") 10% center no-repeat;
+	background-size: cover;
 
 	.content {
-		padding: 20px 10px;
+		//padding:10px 30px 10px 20px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 		.top-cross {
 				text-align: right;
 			span {
@@ -20,7 +25,7 @@
 				height: 40px;
 				font-size: 36px;
 				color: #2239ac;
-				border: 1px solid  #2239ac;
+				//border: 1px solid  #2239ac;
 
 				&:hover {
 					cursor: pointer;
@@ -85,6 +90,8 @@
 
 		.button-holder {
 			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
 			button {
 				height: 46px;
 				line-height: 46px;
@@ -103,36 +110,85 @@
 	}//content
 
 /* -------------------------------- media query sections  --------------------------------*/
+
+	@media (min-width: $screen-xs) {
+
+		.content {
+
+			padding-top: 60px;
+
+			.info {
+				.head {
+					padding-top: 50px;
+					h3 {
+						font-size: 45px;
+					}
+
+					p {
+						font-size: 20px;
+					}
+
+				}//head
+
+				.descr {
+
+					margin-top: 30px;
+
+					p {
+						font-size: 15px;
+						margin-bottom: 20px;
+					}
+				}
+
+			}//info
+
+			.button-holder {
+
+				button {
+					width: 200px;
+				}
+
+			}//button-holder
+		}
+
+
+	}//media xs
+
+
 	@media (min-width: $screen-sm) {
 		.content {
 			position: relative;
-
+			padding-left: 30px;
+			padding-right: 30px;
 			.top-cross {
 				position: absolute;
 				width: 100%;
-				top:0;
+				top:40px;
+				right: 20px;
 				span {
 					margin-top: 10px;
 					margin-right: 20px;
 				}
-			}
-			//top cros
+			}//top cros
 
 			.info {
-				max-width: 800px;
-				margin-right: auto;
-				margin-left: auto;
+				//max-width: 770px;
+				//margin-right: auto;
+				//margin-left: auto;
 				.head {
-
+					max-width: 770px;
+					padding-top: 0;
 				}
 
 				.descr {
-
+					max-width: 770px;
 				}
 
 				.foto-holder {
 
 					.thumb-holder {
+
+						margin-bottom: 20px;
 
 						span {
 							display: block;
@@ -188,8 +244,88 @@
 					}
 
 				}//foto-holder
-			}
-			//info
+
+			}//info
+
+			.button-holder {
+					padding-top: 50px;
+				button {
+
+				}
+
+			}//button-holder
 		}
 	}//media sm
+
+
+	@media (min-width: $screen-md) {
+
+		.content {
+
+			background: url("/images/popup_skoba.png") 90% 45% no-repeat;
+			background-attachment: fixed;
+			.top-cross {
+
+				span {
+
+				}
+			}
+			//top cros
+
+			.info {
+
+				.head {
+
+				}
+
+				.descr {
+
+				}
+
+
+				.foto-holder {
+
+					.thumb-holder {
+						max-width: $screen-md;
+						margin-bottom: 50px;
+						span {
+
+							.mask {
+
+							}
+
+							img {
+
+							}
+						}
+
+					}
+
+				}//foto holder
+			}
+		}//content
+	}//media-md
+
+	@media (min-width: $screen-lg) {
+
+		.content {
+			max-width: $screen-lg;
+			margin-right: auto;
+			margin-left: auto;
+			background-position: 930px 230px;
+
+		}
+
+	}//media
+
+
+	@media (min-width: $screen-extra-lg) {
+
+		.content {
+
+			background-position: 1230px 230px;
+
+		}
+
+	}
 }

@@ -55,12 +55,26 @@
 			.pic-holder {
 				text-align: center;
 				line-height: 90px;
+				width: 100%;
 				span {
+
 					padding-left: 10px;
 					padding-right: 10px;
+					text-align: center;
 					img {
 
 					}
+				}
+
+
+				@media (min-width: $screen-sm) {
+					display: table;
+					text-align: justify;
+
+					span {
+						display: table-cell;
+					}
+
 				}
 
 			}

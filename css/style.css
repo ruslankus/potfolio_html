@@ -1567,12 +1567,12 @@ body {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: rgba(134, 134, 134, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px; }
     #top-menu-container.move {
-      background-color: rgba(134, 134, 134, 0.8); } }
+      background-color: rgba(0, 0, 0, 0.4); } }
 @media (min-width: 1200px) {
   #top-menu-container {
     padding: 0; } }
@@ -1722,8 +1722,6 @@ header {
             display: inline-block;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
-            background-color: white;
             text-align: center;
             line-height: 38px;
             margin-right: 10px; }
@@ -1969,8 +1967,8 @@ header {
         text-align: center;
         line-height: 100px; }
         #service .bottom .wrap .service-holder span {
-          padding-right: 5px;
-          padding-left: 5px;
+          padding-right: 10px;
+          padding-left: 10px;
           display: inline-block; }
           #service .bottom .wrap .service-holder span:first-child {
             padding-left: 0; }
@@ -2145,10 +2143,18 @@ header {
           text-align: left; } }
     #client .mask .wrapper .pic-holder {
       text-align: center;
-      line-height: 90px; }
+      line-height: 90px;
+      width: 100%; }
       #client .mask .wrapper .pic-holder span {
         padding-left: 10px;
-        padding-right: 10px; }
+        padding-right: 10px;
+        text-align: center; }
+      @media (min-width: 768px) {
+        #client .mask .wrapper .pic-holder {
+          display: table;
+          text-align: justify; }
+          #client .mask .wrapper .pic-holder span {
+            display: table-cell; } }
 
 #contacts {
   background-color: #282828;
@@ -2349,8 +2355,6 @@ footer {
       display: inline-block;
       width: 40px;
       height: 40px;
-      background-color: #515151;
-      border-radius: 50%;
       text-align: center;
       line-height: 38px;
       margin-left: 10px; }
@@ -2401,10 +2405,14 @@ footer {
   height: 100%;
   overflow-y: scroll;
   top: 0;
-  background-color: white;
+  background: #f1f1f1 url("/images/popup_bg.png") 10% center no-repeat;
+  background-size: cover;
   /* -------------------------------- media query sections  --------------------------------*/ }
   #popup .content {
-    padding: 20px 10px; }
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px; }
     #popup .content .top-cross {
       text-align: right; }
       #popup .content .top-cross span {
@@ -2414,8 +2422,7 @@ footer {
         width: 40px;
         height: 40px;
         font-size: 36px;
-        color: #2239ac;
-        border: 1px solid  #2239ac; }
+        color: #2239ac; }
         #popup .content .top-cross span:hover {
           cursor: pointer; }
     #popup .content .info {
@@ -2444,7 +2451,9 @@ footer {
       #popup .content .info .foto-holder .big-photo {
         display: none; }
     #popup .content .button-holder {
-      text-align: center; }
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px; }
       #popup .content .button-holder button {
         height: 46px;
         line-height: 46px;
@@ -2456,20 +2465,42 @@ footer {
         font-family: Helvetica_eText,sans-serif;
         font-weight: 300;
         font-size: 16px; }
+  @media (min-width: 480px) {
+    #popup .content {
+      padding-top: 60px; }
+      #popup .content .info .head {
+        padding-top: 50px; }
+        #popup .content .info .head h3 {
+          font-size: 45px; }
+        #popup .content .info .head p {
+          font-size: 20px; }
+      #popup .content .info .descr {
+        margin-top: 30px; }
+        #popup .content .info .descr p {
+          font-size: 15px;
+          margin-bottom: 20px; }
+      #popup .content .button-holder button {
+        width: 200px; } }
   @media (min-width: 768px) {
     #popup .content {
-      position: relative; }
+      position: relative;
+      padding-left: 30px;
+      padding-right: 30px; }
       #popup .content .top-cross {
         position: absolute;
         width: 100%;
-        top: 0; }
+        top: 40px;
+        right: 20px; }
         #popup .content .top-cross span {
           margin-top: 10px;
           margin-right: 20px; }
-      #popup .content .info {
-        max-width: 800px;
-        margin-right: auto;
-        margin-left: auto; }
+      #popup .content .info .head {
+        max-width: 770px;
+        padding-top: 0; }
+      #popup .content .info .descr {
+        max-width: 770px; }
+      #popup .content .info .foto-holder .thumb-holder {
+        margin-bottom: 20px; }
         #popup .content .info .foto-holder .thumb-holder span {
           display: block;
           float: left;
@@ -2494,11 +2525,29 @@ footer {
           #popup .content .info .foto-holder .thumb-holder span img {
             display: block;
             max-width: 100%; }
-        #popup .content .info .foto-holder .big-photo {
-          display: block; }
-          #popup .content .info .foto-holder .big-photo img {
-            display: block;
-            width: 100%; } }
+      #popup .content .info .foto-holder .big-photo {
+        display: block; }
+        #popup .content .info .foto-holder .big-photo img {
+          display: block;
+          width: 100%; }
+      #popup .content .button-holder {
+        padding-top: 50px; } }
+  @media (min-width: 992px) {
+    #popup .content {
+      background: url("/images/popup_skoba.png") 90% 45% no-repeat;
+      background-attachment: fixed; }
+      #popup .content .info .foto-holder .thumb-holder {
+        max-width: 992px;
+        margin-bottom: 50px; } }
+  @media (min-width: 1200px) {
+    #popup .content {
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+      background-position: 930px 230px; } }
+  @media (min-width: 1500px) {
+    #popup .content {
+      background-position: 1230px 230px; } }
 
 #loader {
   position: fixed;
