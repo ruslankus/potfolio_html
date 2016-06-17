@@ -6,8 +6,8 @@
 
 	.wrapper {
 
-		padding-top: 70px;
-		padding-bottom: 45px;
+		padding-top: 75px;
+		padding-bottom: 30px;
 		border-bottom: 1px solid #535353;
 
 
@@ -35,7 +35,7 @@
 		}
 
 		.top-info {
-			margin-top: 20px;
+			margin-top: 25px;
 			div {
 				@media (min-width: $screen-xs) {
 
@@ -90,6 +90,7 @@
 			}
 
 
+
 			@media (min-width: $screen-md) {
 				width: 40%;
 				float: left;
@@ -126,8 +127,8 @@
 			margin-top: 50px;
 			form {
 
-				div {
-					margin-bottom: 15px;
+				& > div {
+					margin-bottom: 20px;
 					& > * {
 						border-radius: 0;
 						border:none;
@@ -135,7 +136,7 @@
 
 					input {
 						background-color: #323232;
-						height: 46px;
+						height: 50px;
 						width: 100%;
 						padding-left: 10px;
 						color: white;
@@ -149,10 +150,10 @@
 
 					textarea {
 						background-color: #323232;
-						height: 145px;
+						height: 150px;
 						width:  100%;
 						resize: none;
-						padding:8px 0 0 8px;
+						padding:10px 0 0 10px;
 						color: white;
 						font-size: 16px;
 						&::-webkit-input-placeholder {color:#919191;}
@@ -164,7 +165,7 @@
 
 					button  {
 						background-color: #2239ac;
-						height: 46px;
+						height: 50px;
 						width: 100%;
 						@include helvetika_light(16px);
 						color: white;
@@ -192,6 +193,13 @@
 				}
 			}
 
+			@media (min-width: $screen-xs) {
+
+				margin-top: 25px;
+
+			}//screen-xs
+
+
 			@media (min-width: $screen-md) {
 				width: 60%;
 				float: left;
@@ -201,10 +209,27 @@
 
 		}//form-holder
 
-		@media (min-width: $screen-lg) {
+	}
+
+	@media (min-width: $screen-sm) {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	@media (min-width: $screen-md) {
+
+
+		.wrapper {
+
+			padding-bottom: 25px;
+
+			h3 {
+				margin-bottom: 25px;
+			}
 
 			.top-info{
-
+				margin-top: 0;
 				width: 23%;
 
 				div {
@@ -226,14 +251,15 @@
 
 
 				}
-			}
-
+			}//top-info
 
 			.form-holder {
+				margin-top: 0;
 				width: 77%;
 				padding-right: 51.7%;
 				padding-left: 30px;
 				position: relative;
+
 				form {
 
 					div {
@@ -269,30 +295,32 @@
 
 
 					}
-				}
 
-			}
+				}//form
 
-		}
+			}//form-holder
 
+
+		}//wrapper
 
 	}
 
-	@media (min-width: $screen-sm) {
-		padding-right: 20px;
-		padding-left: 20px;
-	}
 
 
 	@media (min-width: $screen-lg) {
 
-		padding-right: 0;
-		padding-left: 0;
-		border-bottom: 1px solid #535353;
-		& > .wrapper {
 
+		//border-bottom: 1px solid #535353;
+		& > .wrapper {
+			padding-bottom: 0;
 			@include max_size;
 			border-bottom: none;
+
+			.line{
+				clear:both;
+				padding-top: 25px;
+				border-bottom: 1px solid #535353;
+			}
 		}
 	}
 

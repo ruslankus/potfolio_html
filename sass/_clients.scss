@@ -1,12 +1,29 @@
 #client {
 	
-	background: url("/images/clients_backgraund.jpg") no-repeat center; 
+	background: url("/images/clients_xxs_backgraund.jpg")  100% 100% no-repeat;
 	background-size: cover;
+	-webkit-background-size:cover;
+	@media (min-width: $screen-xs) {
+		background: url("/images/clients_xs_backgraund.jpg")  100% no-repeat;
+	}
 
 
+	@media (min-width: $screen-sm) {
+		background: url("/images/clients_sm_backgraund.jpg")  100% no-repeat;
+	}
 
-	.mask {
-		padding-top: 70px;
+	@media (min-width: $screen-md) {
+		background: url("/images/clients_md_backgraund.jpg")  100% no-repeat;
+		background-attachment: fixed;
+	}
+
+	@media (min-width: $screen-lg) {
+		background: url("/images/clients_backgraund.jpg")  100% no-repeat;
+		background-attachment: fixed;
+	}
+
+		.mask {
+		padding-top: 75px;
 		padding-bottom: 70px;
 		background: url("/images/header_mask_bg.png");
 
@@ -42,7 +59,7 @@
 			}
 
 			h3 {
-				margin-top: 10px;
+				margin-top: 0;
 				@include helvetika_light(16px);
 				color: #aeaeae;
 				text-align: center;
@@ -54,10 +71,11 @@
 
 			.pic-holder {
 				text-align: center;
-				line-height: 90px;
+				line-height: 75px;
 				width: 100%;
+				margin-top: 40px;
 				span {
-
+					display: inline-block;
 					padding-left: 10px;
 					padding-right: 10px;
 					text-align: center;

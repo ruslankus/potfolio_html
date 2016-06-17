@@ -1,6 +1,6 @@
 #aboutme {
 
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 
 	@media (min-width: $screen-sm) {
 		padding-left:20px ;
@@ -11,7 +11,7 @@
 	@media (min-width: $screen-md) {
 		background: url("/images/triangle_about_me.svg") 0% center no-repeat;
 		background-size: cover;
-
+		padding-bottom: 75px;
 	}
 
 
@@ -24,12 +24,7 @@
 
 	.wrapper {
 
-		padding-top: 55px;
-
-
-		@media (min-width: $screen-lg) {
-			@include max_size;
-		}
+		padding-top: 75px;
 
 		h2 {
 			@include firsextra_light(40px);
@@ -43,7 +38,7 @@
 		}
 
 		h3 {
-			margin-top: 10px;
+			margin-top: 0;
 			@include helvetika_light(16px);
 			color: #aeaeae;
 			text-align: center;
@@ -56,7 +51,7 @@
 
 		.descr {
 
-			margin-top: 60px;
+			margin-top: 50px;
 			padding-left: 10px;
 			padding-right: 10px;
 
@@ -66,7 +61,7 @@
 
 				p {
 					margin-bottom: 30px;
-					@include helvetika_light(14px);
+					@include helvetika_light(16px);
 					color: #333333;
 					line-height: 23px;
 
@@ -205,6 +200,41 @@
 			}//s-holder
 
 		}//sertificates
+
+
+		@media (min-width: $screen-md) {
+
+			.sertificates {
+
+				margin-top: 50px;
+
+				h3 {
+					font-size: 30px;
+					margin-bottom: 30px;
+				}
+
+				.s-holder {
+
+					a {
+
+						img {
+
+
+						}
+
+
+
+					}
+
+				}//s-holder
+
+			}//sertificates
+
+		}//media md
+
+		@media (min-width: $screen-lg) {
+			@include max_size;
+		}//media lg
 
 	}//wrapper
 

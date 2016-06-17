@@ -6,11 +6,18 @@
 
 	.container {
 		padding-top: 55px;
+		padding-bottom: 30px;
 		width: 100%;
 
 		@media (min-width: $screen-sm) {
 			padding-right: 5px;
 			padding-left: 5px;
+		}
+
+
+		@media (min-width: $screen-md) {
+			padding-top: 75px;
+			padding-bottom: 50px;
 		}
 
 
@@ -41,7 +48,7 @@
 
 
 			h3 {
-				margin-top: 10px;
+				margin-top: 0;
 				@include helvetika_light(16px);
 				color:#aeaeae;
 				text-align: center;
@@ -138,14 +145,14 @@
 										color: white;
 										width: 40px;
 										height:40px;
-										border:2px solid white;
-										border-radius: 50%;
 										line-height: 36px;
 										opacity: 0;
 
 										span {
-											font-size: 28px;
-											color:white;
+											display: block;
+											img {
+												border:none;
+											}
 										}
 
 										@media (min-width: $screen-lg) {
@@ -232,6 +239,17 @@
 
 
 				}//.project
+
+				@media (min-width: $screen-md) {
+
+					margin-top: 55px;
+
+					& > .project {
+						margin-bottom: 30px;
+					}
+
+
+				}//media md
 
 			}//.portfolio-holder
 

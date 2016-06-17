@@ -23,6 +23,21 @@
 			padding-right: 20px;
 		}
 
+		@media (min-width: $screen-md) {
+
+			padding-top: 120px;
+			padding-bottom: 90px;
+
+			& > p {
+
+				margin-top: 20px;
+				width:67%;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+
+		}//media - md
 
 
 		@media (min-width: $screen-lg) {
@@ -40,10 +55,6 @@
 		background-color: #f1f1f1;
 		padding-left: 10px;
 		padding-right: 10px;
-		@media (min-width: $screen-lg) {
-			padding-left: 0;
-			padding-right: 0;
-		}
 
 
 		.wrap {
@@ -73,7 +84,7 @@
 			}
 
 			h3 {
-				margin-top: 10px;
+				margin-top: 0;
 				@include helvetika_light(16px);
 				color: #aeaeae;
 				text-align: center;
@@ -84,7 +95,7 @@
 			}
 
 			.service-holder {
-				margin-top: 30px;
+				margin-top: 40px;
 				text-align: center;
 				line-height: 100px;
 				span {
@@ -112,10 +123,49 @@
 					}
 				}
 
-			}
-			//.service-holder
+			}//.service-holder
 
 		}//wrap
+
+		@media (min-width: $screen-md) {
+
+			& > .wrap {
+				padding-top: 60px;
+				padding-bottom: 70px;
+
+				.service-holder {
+
+					line-height: 130px;
+					margin-top:30px;
+
+					span {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+				}
+			}
+
+		}
+
+		@media (min-width: $screen-lg) {
+			padding-left: 0;
+			padding-right: 0;
+
+
+			& > .wrap {
+				padding-top: 70px;
+				padding-bottom: 85px;
+				.service-holder {
+
+
+					span {
+						padding-left: 25px;
+						padding-right: 25px;
+					}
+				}
+			}
+
+		}//media-lg
 
 	}//bottom
 

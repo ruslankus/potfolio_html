@@ -89,6 +89,11 @@ footer {
 
 	}//wrapper
 
+	@media (min-width: $screen-md) {
+
+		padding-bottom: 30px;
+	}
+
 
 	@media (min-width: $screen-lg) {
 
@@ -96,6 +101,7 @@ footer {
 		padding-right: 0px;
 
 		& > .wrapper {
+
 			@include max_size;
 		}
 	}
